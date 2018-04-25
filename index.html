@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Your friendly Math Helper</title>
+		<script>
+			document.getElementFromId("quadratic").onclick = function() {
+				var a = parseFloat(prompt("What's A?"));
+				var b = parseFloat(prompt("B?"));
+				var c = parseFloat(prompt("C?"));
+				alert("First Root: " + ((-b + sqrt(b*b - 4*a*c)) / 2*a) + ", Second: " + ((-b - sqrt(b*b - 4*a*c)) / 2*a));
+			}
+		</script>
+	</head>
+	<body>
+		<button id="quadratic">Solve a Quadratic Equation</button>
+	</body>
+</html>
